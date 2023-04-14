@@ -1,2 +1,3 @@
-const content = window.URL.toString().split("?").pop()
-console.log(content)
+const content = str(window.location.href).split("?").pop()
+const text = content.replace(/%20/g, " ")
+console.log(text)
