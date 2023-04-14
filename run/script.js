@@ -1,4 +1,12 @@
 var u = window.location.href.split("?").pop();
 const content_var = decodeURI(u);
 console.log(content_var);
-document.getElementById("cont-box").innerHTML = content_var
+const content = document.getElementById("textarea-id").value;
+    
+const blob= new Blob([content_var], {
+    type:'text/html'
+
+});
+
+const fileurl = URL.createObjectURL(blob);
+window.location.href(fileurl)
