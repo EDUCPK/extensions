@@ -1,3 +1,2 @@
-const content = str(window.location.href).split("?").pop()
-const text = content.replace(/%20/g, " ")
-console.log(text)
+const content = decodeURI(str(window.location.href).split("?").pop())
+console.log(content)
