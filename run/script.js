@@ -1,2 +1,3 @@
-const content = decodeURI(str(window.location.href).split("?").pop())
-console.log(content)
+var u = str(window.location.href).split("?").pop();
+const content = decodeURI(u);
+console.log(content);
