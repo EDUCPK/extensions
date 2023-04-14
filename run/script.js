@@ -8,4 +8,4 @@ const blob= new Blob([content_var], {
 });
 
 const fileurl = URL.createObjectURL(blob);
-window.location.href(fileurl)
+window.location.href = fileurl
